@@ -1,0 +1,25 @@
+/** {*/
+/*    box-sizing: border-box;*/
+/*}*/
+.border{
+    width: 190px;
+    height: 190px;
+    border: 1px solid black;
+}
+.tank{
+    position:absolute;
+    width: 19px;
+    height: 19px;
+}
+
+.boom{
+    position: absolute;
+    width: 17px;
+}
+#boom{
+    top: 104px;
+    left: 124px;
+    border-bottom: none;
+}
+
+

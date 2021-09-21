@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exercise2</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="style.js" type="text/javascript" rel="script"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+<div class="border">
+    <div id="tank" class="tank">
+        <img src="tanks.jpg" id="tanks" class="tank" alt="tank"/><br>
+        <span></span>
+    </div>
+    <div id="boom" class="boom">
+        <img src="boom.png" id="booms" class="boom" alt="boom"/>
+    </div>
+</div>
+<div>
+    <input type="button" onclick="move_tank('up')" value="up" id="up"/>
+    <input type="button" onclick="move_tank('down')" value="down" id="down"/>
+    <input type="button" onclick="move_tank('left')" value="left" id="left"/>
+    <input type="button" onclick="move_tank('right')" value="right" id="right"/>
+</div>
+</body>
+</html>
+<script>
+    $(function () {
+        let tank = $('#tank');
+        let boom = $('#boom');
+        let boom1 = $('.boom');
+        let tank1 = $('.tank');
+        // kiểm tra 2 div có chạm nhau
+        function collision($div1, $div2) {
+            // Khai báo các thông số của 2 object
+            var x1 = $div1.offset().left;
+            var y1 = $div1.offset().top;
+            var h1 = $div1.outerHeight(true);
+            var w1 = $div1.outerWidth(true);
+            var b1 = y1 + h1;
+            var r1 = x1 + w1;
+
+            var x2 = $div2.offset().left;
+            var y2 = $div2.offset().top;
+            var h2 = $div2.outerHeight(true);
+            var w2 = $div2.outerWidth(true);
+            var b2 = y2 + h2;
+            var r2 = x2 + w2;
+
+            // Nếu xảy ra va chạm
+            if (b1 < y2 || y1 > b2 || r1 < x2 || x1 > r2) {
+                return false;
+            }
+            // Ngược lại không va chạm
+            else {
+                return true;
+            }
+        }
+        // nếu div tank chạm vào div bom - xóa ảnh bom và thay tank bằng ảnh vụ nổ
+        var the_game = setInterval(function () {
+            if (collision(tank, boom)) {
+                $('#booms').hide();
+                $('#tanks').attr("src", "explosion.png");
+                $('#tanks').hide(2500);//lam mau ti :V
+                // chết rồi nên cho dừng nút di chuyển lại :P
+                $('#up').prop('disabled', true);
+                $('#down').prop('disabled', true);
+                $('#left').prop('disabled', true);
+                $('#right').prop('disabled', true);
+            } else {
+
+            }
+        })
+    });
+</script>

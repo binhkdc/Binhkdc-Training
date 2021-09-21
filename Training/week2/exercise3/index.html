@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exercise3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <div class="casio border p-2">
+        <input id="number1" class="form-control" type="text"/><br>
+        <div class="p-2 box-button">
+            <button type="button" class="btn number">1</button>
+
+            <button type="button" class="btn number">2</button>
+
+            <button type="button" class="btn number">3</button>
+
+            <button type="button" class="btn operation" id="a">+</button>
+        </div>
+        <div class="p-2 box-button">
+            <button type="button" class="btn  number">4</button>
+
+            <button type="button" class="btn  number">5</button>
+
+            <button type="button" class="btn number">6</button>
+
+            <button type="button" class="btn operation" id="af">-</button>
+        </div>
+        <div class="p-2 box-button">
+            <button type="button" class="btn number">7</button>
+
+            <button type="button" class="btn number">8</button>
+
+            <button type="button" class="btn number">9</button>
+
+            <button type="button" class="btn operation" id="x">*</button>
+        </div>
+        <div class="p-2 box-button">
+            <button type="button" class="btn refresh" id="C">C</button>
+
+            <button type="button" class="btn number">0</button>
+
+            <button type="submit" class="btn" id="e">=</button>
+
+            <button type="button" class="btn operation" id="d">/</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    $(document).ready(function () {
+        // chặn một số nút khi vừa mở trang 1707
+        $('#number1').attr('disabled', 'true');
+        $('#x').attr('disabled', 'true');//nhan
+        $('#d').attr('disabled', 'true');//chia
+        $('#a').attr('disabled', 'true');//cong
+        $('#af').attr('disabled', 'true');//tru
+        $('#C').attr('disabled', 'true');//xoa
+        $('#e').attr('disabled', 'true');//bang
+
+        // lay so
+        $('.box-button button.number').on('click', function () {
+            $('#result').attr('id', 'number1');
+            $char = $(this).html(); // Lấy số vừa click
+            $value_calculation = $('#number1').val();
+            $('#number1').val($value_calculation + $char);
+            $('#a').removeAttr('disabled');//cong
+            $('#af').removeAttr('disabled');//tru
+            $('#x').removeAttr('disabled');//nhan
+            $('#d').removeAttr('disabled');//chia
+            $('#C').removeAttr('disabled');//xoa
+            $('#e').removeAttr('disabled');//bang
+        })
+
+        //nut C
+        $('.refresh').on('click', function () {
+            $('#number1').val(''); // Làm trống ô phép tính
+            $('#result').val(''); // Làm trống ô kết quả
+        });
+        $('.box-button button.operation').on('click', function () {
+            $char = $(this).html(); // Lấy dấu phép toán vừa click
+            $value_calculation = $('#number1').val(); // Lấy chuỗi giá trị trong ô phép tính
+            $('#number1').val($value_calculation + $char); // Thêm dấu phép toán vừa click vào sau chuỗi giá trị trong ô phép tính
+            $('#x').attr('disabled', 'true');//nhan
+            $('#d').attr('disabled', 'true');//chia
+            $('#a').attr('disabled', 'true');//cong
+            $('#af').attr('disabled', 'true');//tru
+            $('#e').attr('disabled', 'true');//bang
+        });
+        $('#e').on('click', function () {
+            $result = $('#number1').val(); // Lấy chuỗi giá trị trong ô phép tính
+            $('#number1').attr('id', 'result');
+            $('#result').val(eval($result)); // Hiển thị kết quả trong ô kết quả
+        });
+
+    });
+</script>
