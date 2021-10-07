@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="31a1fa6b-79d2-46c2-86e0-7384fd7a4bd7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training/signup/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training/signup/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training/signup/style.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +31,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Training/week4/ex5" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -36,7 +39,11 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Binhkdc-Training\Training\week5" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Binhkdc-Training\Training\week5\ex1" />
       <recent name="C:\xampp\htdocs\Binhkdc-Training\Training\signup" />
     </key>
   </component>
@@ -64,6 +71,9 @@
       <updated>1632371415962</updated>
       <workItem from="1632371418675" duration="7293000" />
       <workItem from="1632381109961" duration="1238000" />
+      <workItem from="1633489241980" duration="25496000" />
+      <workItem from="1633520955479" duration="1810000" />
+      <workItem from="1633584385794" duration="17016000" />
     </task>
     <servers />
   </component>
