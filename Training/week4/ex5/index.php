@@ -64,6 +64,7 @@ $query = mysqli_query($conn, "select * from `user`");
             </table>
             <span id="add"></span>
             <button type="button" id="btn_add" class="btn btn-success" onclick="loadDoc()">add</button>
+            <a class="btn btn-primary" id="btn_signup" href="signup.php" role="button">Signup</a>
         </div>
     </body>
 </html>
