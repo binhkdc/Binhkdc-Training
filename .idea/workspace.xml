@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="31a1fa6b-79d2-46c2-86e0-7384fd7a4bd7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Training/signup/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Training/signup/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Training/signup/style.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training/week5/ex1/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/Training/week5/ex1/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,9 +38,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Binhkdc-Training\Training\week4\ex5" />
       <recent name="C:\xampp\htdocs\Binhkdc-Training\Training\week5" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Binhkdc-Training\Training\week5\ex2" />
+      <recent name="C:\xampp\htdocs\Binhkdc-Training\Training\week5\ex2\Controller" />
       <recent name="C:\xampp\htdocs\Binhkdc-Training\Training\week5\ex1" />
       <recent name="C:\xampp\htdocs\Binhkdc-Training\Training\signup" />
     </key>
@@ -73,7 +74,9 @@
       <workItem from="1632381109961" duration="1238000" />
       <workItem from="1633489241980" duration="25496000" />
       <workItem from="1633520955479" duration="1810000" />
-      <workItem from="1633584385794" duration="17016000" />
+      <workItem from="1633584385794" duration="17704000" />
+      <workItem from="1633669898117" duration="8796000" />
+      <workItem from="1633746208842" duration="16497000" />
     </task>
     <servers />
   </component>

@@ -1,8 +1,7 @@
 <?php
 
-class User
+class UserModel
 {
-
     public $id;
     public $name;
     public $position;
@@ -205,4 +204,3 @@ class User
         return mysqli_query($this->connectToDatabase(),"SELECT * FROM `user`");
     }
 }
-
