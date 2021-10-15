@@ -1,4 +1,5 @@
 <?php
+namespace view\signup;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +14,7 @@
 <div class="bg-img">
     <div class="content">
         <header>Sign Up</header>
-        <form action="add.php" method="post">
+        <form action="add_form.php" method="post">
             <div class="field">
                 <span class="fa fa-user"></span>
                 <input type="text" name="name" required placeholder="Tên">

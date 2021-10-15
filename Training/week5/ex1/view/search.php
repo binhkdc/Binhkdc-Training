@@ -1,14 +1,29 @@
 <?php
-include 'User.php';
-include('head_link.php');
-$User=new User();
-$User->setSearch($_POST['search']);
+
+namespace view\search;
+
+use controller\UserController\UserController;
+
+include __DIR__ . '/../controller/UserController.php';
+$UserController = new UserController();
+$UserController->setSearch($_POST['search']);
 if (isset($_REQUEST['ok'])) {
     $search = addslashes($_POST['search']);
     if (empty($search)) {
         echo "Yeu cau nhap du lieu vao o trong";
     } else {
-        $query = $User->searchUser(); ?>
+        $query = $UserController->search(); ?>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <title>search</title>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+                  integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+                  crossorigin="anonymous">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+        </head>
+        <body>
         <div class="container">
             <table class='table table-bordered'>
                 <tr class="bg-light">
@@ -36,5 +51,7 @@ if (isset($_REQUEST['ok'])) {
                 <?php } ?>
             </table>
         </div>
+        </body>
+        </html>
     <?php } ?>
 <?php } ?>
