@@ -1,20 +1,29 @@
 <?php
-include('head_link.php');
-include 'User.php';
-$User=new User();
-$User->setId($_GET['id']);
-$query = $User->getById();
-$row = mysqli_fetch_array($query);
+namespace view\edit;
+use controller\UserController\UserController;
+include __DIR__ . '/../controller/UserController.php';
+$UserController=new UserController();
+$UserController->setId($_GET['id']);
+$row = $UserController->edit();
+if($_POST){
+    $UserController=new UserController();
+    $UserController->setId($_GET['id']);
+    $UserController->update();
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>edit</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 <div class="container">
     <h2>Edit</h2>
-    <form method="POST" action="update.php?id=<?php echo $User->getId(); ?>">
+    <form method="POST" action="edit.php?id=<?php echo $UserController->getId(); ?>">
         <table class="table table-bordered">
             <tr class="bg-light">
                 <td>Họ và tên</td>

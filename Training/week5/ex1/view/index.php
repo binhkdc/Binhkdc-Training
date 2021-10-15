@@ -1,14 +1,19 @@
 <?php
-include "head_link.php";
-include 'User.php';
-$User = new User();
-$query = $User->selectUser();
+use controller\UserController\UserController;
+
+include __DIR__ . '/../controller/UserController.php';
+$UserController = new UserController();
+$query = $UserController->showDatabase();
 ?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>ex5</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 <div class="container">
@@ -80,6 +85,27 @@ $query = $User->selectUser();
 </div>
 </body>
 </html>
+<script>
+    function loadDoc() {
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function () {
+            document.getElementById("add").innerHTML = this.responseText;
+            document.getElementById('btn_add').hidden = "true";
+            document.getElementById('btn_signup').hidden = "true";
+
+        }
+        xhttp.open("POST", "add_form.php", true);
+        xhttp.send();
+    }
+
+    ///modal
+    var myModal = document.getElementById('myModal')
+    var myInput = document.getElementById('myInput')
+
+    myModal.addEventListener('shown.bs.modal', function () {
+        myInput.focus()
+    })
+</script>
 
 
 

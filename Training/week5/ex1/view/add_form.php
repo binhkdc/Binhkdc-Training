@@ -1,15 +1,26 @@
 <?php
-include "head_link.php";
+namespace view\add_form;
+use controller\UserController\UserController;
+include __DIR__ . '/../controller/UserController.php';
+if($_POST){
+    $UserController=new UserController();
+    $UserController->add();
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>add</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 <div class="container">
     <h2>add colums</h2>
-    <form method="POST" action="add.php">
+    <form method="POST" action="add_form.php">
         <table class="table table-bordered">
             <tr class="bg-light">
                 <td>Họ và tên</td>
