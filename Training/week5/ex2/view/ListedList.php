@@ -1,5 +1,9 @@
 <?php
-include 'UserController.php';
+namespace view\ListedList;
+use controller\UserController\UserController;
+
+include __DIR__ . '/../controller/UserController.php';
+
 $userController = new UserController();
 $query=$userController->showDatabase();
 ?>

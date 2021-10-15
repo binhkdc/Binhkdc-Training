@@ -1,5 +1,9 @@
 <?php
-include 'UserModel.php';
+namespace view\editUsers;
+use model\UserModel\UserModel;
+
+include __DIR__ . '/../model/UserModel.php';
+
 $User=new UserModel();
 $User->setId($_GET['id']);
 $query = $User->getById();
@@ -21,7 +25,6 @@ $row = mysqli_fetch_array($query);
     <form method="POST" action="updateUsers.php?id=<?php echo $User->getId(); ?>">
         <table class="table table-bordered">
             <tr class="bg-light">
-                <td>Id</td>
                 <td>Họ và tên</td>
                 <td>Chức danh</td>
                 <td>Đơn vị</td>
@@ -30,18 +33,18 @@ $row = mysqli_fetch_array($query);
                 <td>Vai trò</td>
                 <td>Ngừng sử dụng</td>
             </tr>
-            <tr><td><?php echo $row['id']; ?></td>
-                <td><?php echo $row['name']; ?></td>
-                <td><?php echo $row['position']; ?></td>
-                <td><?php echo $row['unit']; ?></td>
-                <td><?php echo $row['Email']; ?></td>
-                <td><?php echo $row['tel']; ?></td>
-                <td><?php echo $row['role']; ?></td>
+            <tr>
+                <td><input type="text" name="name" class="form-control" value="<?php echo $row['name']; ?>" required></td>
+                <td><input type="text" name="position" class="form-control" value="<?php echo $row['position']; ?>" required></td>
+                <td><input type="text" name="unit" class="form-control" value="<?php echo $row['unit']; ?>" required></td>
+                <td><input type="text" name="Email" class="form-control" value="<?php echo $row['Email']; ?>" required></td>
+                <td><input type="text" name="tel" class="form-control" value="<?php echo $row['tel']; ?>" required></td>
+                <td><input type="text" name="role" class="form-control" value="<?php echo $row['role']; ?>" required></td>
                 <td><input type="checkbox" class="form-check-input" name="stop_using" value="1" <?php if($row['stop_using']=='1'){echo 'checked';} ?>></td>
             </tr>
         </table>
-        <input type="submit" class="btn btn-success" name="submit" value="save">
-        <a class="btn btn-primary" href="ListedList.php" role="button">Back</a>
+        <input type="submit" class="btn btn-success" name="submit" value="Gửi">
+        <a class="btn btn-primary" href="ListedList.php" role="button">Cancel</a>
     </form>
 </div>
 

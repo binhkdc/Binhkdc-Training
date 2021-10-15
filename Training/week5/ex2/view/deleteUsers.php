@@ -1,5 +1,9 @@
 <?php
-include 'UserModel.php';
+namespace view\deleteUsers;
+use model\UserModel\UserModel;
+
+include __DIR__ . '/../model/UserModel.php';
+
 if ($_POST) {
     $User = new UserModel();
     $User->setId($_GET['id']);

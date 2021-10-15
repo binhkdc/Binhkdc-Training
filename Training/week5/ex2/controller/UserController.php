@@ -1,5 +1,9 @@
 <?php
-include 'UserModel.php';
+namespace controller\UserController;
+use model\UserModel\UserModel;
+
+include __DIR__ . '/../model/UserModel.php';
+
 class UserController
 {
     public $id;
