@@ -1,5 +1,9 @@
 <?php
-include 'UserModel.php';
+namespace view\editUsers;
+use model\UserModel\UserModel;
+
+include __DIR__ . '/../model/UserModel.php';
+
 $User=new UserModel();
 $User->setId($_GET['id']);
 $query = $User->getById();

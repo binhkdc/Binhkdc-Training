@@ -6,7 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="31a1fa6b-79d2-46c2-86e0-7384fd7a4bd7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Training/week5/ex1/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/Training/week5/ex1/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training/week5/ex2/AddUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/Training/week5/ex2/view/AddUsers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training/week5/ex2/ListedList.php" beforeDir="false" afterPath="$PROJECT_DIR$/Training/week5/ex2/view/ListedList.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training/week5/ex2/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Training/week5/ex2/controller/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training/week5/ex2/UserModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Training/week5/ex2/model/UserModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training/week5/ex2/deleteUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/Training/week5/ex2/view/deleteUsers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training/week5/ex2/editUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/Training/week5/ex2/view/editUsers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training/week5/ex2/showUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/Training/week5/ex2/view/showUsers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training/week5/ex2/updateUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/Training/week5/ex2/view/updateUsers.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,10 +49,11 @@
       <recent name="C:\xampp\htdocs\Binhkdc-Training\Training\week5" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Binhkdc-Training\Training\week5\ex2\view" />
+      <recent name="C:\xampp\htdocs\Binhkdc-Training\Training\week5\ex2\controller" />
+      <recent name="C:\xampp\htdocs\Binhkdc-Training\Training\week5\ex2\model" />
       <recent name="C:\xampp\htdocs\Binhkdc-Training\Training\week5\ex2" />
       <recent name="C:\xampp\htdocs\Binhkdc-Training\Training\week5\ex2\Controller" />
-      <recent name="C:\xampp\htdocs\Binhkdc-Training\Training\week5\ex1" />
-      <recent name="C:\xampp\htdocs\Binhkdc-Training\Training\signup" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html (1)">
@@ -76,7 +84,11 @@
       <workItem from="1633520955479" duration="1810000" />
       <workItem from="1633584385794" duration="17704000" />
       <workItem from="1633669898117" duration="8796000" />
-      <workItem from="1633746208842" duration="16497000" />
+      <workItem from="1633746208842" duration="17230000" />
+      <workItem from="1633827974718" duration="10245000" />
+      <workItem from="1633844336449" duration="15338000" />
+      <workItem from="1634002632443" duration="17339000" />
+      <workItem from="1634266395214" duration="16301000" />
     </task>
     <servers />
   </component>
