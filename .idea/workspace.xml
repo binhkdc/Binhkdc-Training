@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31a1fa6b-79d2-46c2-86e0-7384fd7a4bd7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Training/week5/ex1/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/Training/week5/ex1/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +17,7 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Training/week6/yii2_advance" />
   </component>
   <component name="ProjectId" id="1yWdjpIuhRfbJY2SB2ch5FvDsLY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -29,15 +29,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Training/week4/ex5" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/PHP/kimkhanh" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Binhkdc-Training\Training\week6\yii2_advance\frontend\web\css" />
       <recent name="C:\xampp\htdocs\Binhkdc-Training\Training\week4\ex5" />
       <recent name="C:\xampp\htdocs\Binhkdc-Training\Training\week5" />
     </key>
@@ -77,6 +79,8 @@
       <workItem from="1633584385794" duration="17704000" />
       <workItem from="1633669898117" duration="8796000" />
       <workItem from="1633746208842" duration="16497000" />
+      <workItem from="1634733497842" duration="10367000" />
+      <workItem from="1634815794085" duration="69383000" />
     </task>
     <servers />
   </component>
